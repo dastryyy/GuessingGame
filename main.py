@@ -29,7 +29,6 @@ def give_hints(n, v):
     elif v > n:
         # aim lower
         print("Try guessing lower!")
-    return
 
 
 print("Hello there!")
@@ -38,7 +37,6 @@ while True:
     print("CHANCES LEFT:", chances_left)
     try:
         val = int(input("Enter your best guess here: "))
-
         if out_of_range(val):
             print("That's out of bounds! Try again.")
         else:
